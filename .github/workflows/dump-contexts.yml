@@ -12,5 +12,5 @@ jobs:
       run: cat $GITHUB_EVENT_PATH
     - name: Extract repository name and owner
       run: |
-        cat $GITHUB_EVENT_PATH | jq '.repository.owner.name'
+        cat $GITHUB_EVENT_PATH | jq '.repository.owner.login'
         cat $GITHUB_EVENT_PATH | jq '.repository.name'
