@@ -6,14 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-			- run: echo NWO is ${{ github.repository }}
-
-		  - run: echo Event name is ${{ github.event_name }}
-			
-			- name: Dump event payload
-			  run: echo $GITHUB_EVENT_PATH
-
-			- name: Extract repository name and owner
-			  run: |
-					cat $GITHUB_EVENT_PATH | jq '.repository.owner.name'
-					cat $GITHUB_EVENT_PATH | jq '.repository.name'
+    - run: echo NWO is ${{ github.repository }}
+    - run: echo Event name is ${{ github.event_name }}
+    - name: Dump event payload
+      run: echo $GITHUB_EVENT_PATH
+    - name: Extract repository name and owner
+      run: |
+        cat $GITHUB_EVENT_PATH | jq '.repository.owner.name'
+        cat $GITHUB_EVENT_PATH | jq '.repository.name'
