@@ -11,5 +11,5 @@ jobs:
   build-test-deploy:
     uses: ./.github/workflows/reusable-slow-build-test-deploy.yml
 
-  build-test-deploy-again:
-    uses: ./.github/workflows/reusable-slow-build-test-deploy.yml
+  foo-bar-baz:
+    uses: ./.github/workflows/reusable-with-concurrency.yml
