@@ -10,12 +10,12 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-		needs: build
+    needs: build
     steps:
       - run: sleep 30
 
   deploy:
     runs-on: ubuntu-latest
-		needs: test
+    needs: test
     steps:
       - run: sleep 30
