@@ -5,11 +5,9 @@ on:
 jobs:
   example_matrix:
     strategy:
-      max-parallel: 2
+      max-parallel: 1
       matrix:
-        version: [10, 12, 14]
-				
-		runs-on: ubuntu-linux
-		steps:
-		  - run: sleep 30
-		
+        version: [one, two, three]	
+    runs-on: ubuntu-linux
+    steps:
+      - run: sleep 30
