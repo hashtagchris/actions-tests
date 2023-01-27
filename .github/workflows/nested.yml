@@ -13,3 +13,6 @@ jobs:
 
   foo-bar-baz:
     uses: ./.github/workflows/reusable-with-concurrency.yml
+
+  three-indies:
+    uses: ./.github/workflows/reusable-three-independent-jobs.yml
