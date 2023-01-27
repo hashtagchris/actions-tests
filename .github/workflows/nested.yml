@@ -1,0 +1,15 @@
+name: nested
+on:
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hi
+
+  build-test-deploy:
+    uses: /.github/workflows/reusable-slow-build-test-deploy.yml@main
+
+  build-test-deploy-again:
+    uses: /.github/workflows/reusable-slow-build-test-deploy.yml@main
