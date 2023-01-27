@@ -9,7 +9,7 @@ jobs:
       - run: echo hi
 
   build-test-deploy:
-    uses: /.github/workflows/reusable-slow-build-test-deploy.yml@main
+    uses: ./.github/workflows/reusable-slow-build-test-deploy.yml
 
   build-test-deploy-again:
-    uses: /.github/workflows/reusable-slow-build-test-deploy.yml@main
+    uses: ./.github/workflows/reusable-slow-build-test-deploy.yml
