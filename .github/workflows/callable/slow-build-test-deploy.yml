@@ -1,7 +1,7 @@
 name: callable build, test, deploy
 on:
-  workflow_dispatch:
-
+  workflow_call:
+    
 jobs:
   build:
     runs-on: ubuntu-latest
