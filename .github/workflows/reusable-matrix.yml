@@ -8,6 +8,6 @@ jobs:
       max-parallel: 1
       matrix:
         version: [one, two, three]	
-    runs-on: ubuntu-linux
+    runs-on: ubuntu-latest
     steps:
       - run: sleep 30
