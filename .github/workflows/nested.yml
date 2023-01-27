@@ -11,8 +11,11 @@ jobs:
   build-test-deploy:
     uses: ./.github/workflows/reusable-slow-build-test-deploy.yml
 
-  foo-bar-baz:
-    uses: ./.github/workflows/reusable-with-concurrency.yml
+  # foo-bar-baz:
+  #  uses: ./.github/workflows/reusable-with-concurrency.yml
 
-  three-indies:
-    uses: ./.github/workflows/reusable-three-independent-jobs.yml
+  # three-indies:
+  #  uses: ./.github/workflows/reusable-three-independent-jobs.yml
+
+  matrix:
+    uses: ./.github/workflows/reusable-matrix.yml
