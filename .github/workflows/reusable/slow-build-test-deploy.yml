@@ -1,4 +1,4 @@
-name: callable build, test, deploy
+name: call on me
 on:
   workflow_call:
     
