@@ -1,0 +1,19 @@
+name: call on me three
+on:
+  workflow_call:
+    
+jobs:
+  foo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 30
+
+  bar:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 30
+
+  baz:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 30
